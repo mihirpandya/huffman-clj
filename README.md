@@ -1,10 +1,11 @@
-# Huffman Coding in Clojure
+# Web App on Huffman Coding
 
-Author: Mihir Pandya
 
 ## About
 
 Huffman coding is an algorithm that is used for lossless data compression that relies on the frequencies of characters in a string to determine a compressed bitstring that it can be represented by. This is done by first generating a Huffman tree where the leaves of the tree are all the characters in the string. Each character's corresponding bitstring is determined by traversing down the tree to that character where each left traversal represents a 0 and each right traversal represents a 1.
+
+This app is written in Clojure and Noir web framework is used to turn it into a web app. Amazon's Elastic Beanstalk is used to deply this web app. This was done by making a WAR file from the Clojure app and then pushing that file to the Elastic Beanstalk.
 
 ## Why Clojure
 
